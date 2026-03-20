@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow)](https://www.python.org/)
 
 
-> 一个强大的 123云盘分享链接自动化订阅管理工具，支持自动转存、秒传生成和 OpenList 联动
+> 一个强大的 123云盘分享链接自动化订阅管理工具，支持123云盘分享链接自动转存，115网盘、天翼网盘、夸克网盘、阿里云盘秒传至123云盘
 
 ## ✨ 功能特性
 
@@ -37,7 +37,7 @@
 
 ```bash
 # 1. 拉取镜像
-docker pull yinas/123subscribe:latest
+docker pull wenyi2372/123pan-atuo-save:latest
 
 # 2. 运行容器
 docker run -d \
@@ -47,7 +47,7 @@ docker run -d \
   -e APP_PASSWORD=yourpassword \
   -v $(pwd)/conf:/app/conf \
   -v $(pwd)/logs:/app/logs \
-  yinas/123subscribe:latest
+  wenyi2372/123pan-atuo-save:latest
 
 # 3. 访问 Web 界面
 # http://localhost:24512
