@@ -16,8 +16,8 @@
 
 ### ⚡ 秒传功能
 - 生成 123云盘秒传 JSON
-- 支持夸克网盘、天翼云盘转 123云盘
-- 支持 123FastLink 格式秒传链接
+- 支持115网盘、夸克网盘、天翼云盘、阿里云盘转 123云盘
+- 支持 JSON 格式秒传链接
 - 批量转存秒传文件
 
 ### 📺 OpenList 联动
@@ -60,7 +60,7 @@ version: '3.8'
 
 services:
   123subscribe:
-    image: yinas/123subscribe:latest
+    image: wenyi2372/123pan-atuo-save:latest
     container_name: 123subscribe
     ports:
       - "24512:24512"
@@ -126,6 +126,7 @@ openlist_watcher:
 3. 在"后台基础配置"中填写 123云盘 API 信息
 4. 输入授权码激活软件
 5. 添加订阅分享链接
+6. 如需使用阿里云盘相关功能，请在后台基础配置中设置阿里云盘Refresh Token（阿里云盘不支持从分享链接获取秒传信息，请先转存到自己的阿里云盘中，复制转存目录的URL进行JSON生成）
 
 ### 2. 添加订阅
 
